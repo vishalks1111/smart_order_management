@@ -1,1 +1,21 @@
-
+server:
+  port: 8080
+ 
+spring:
+  application:
+    name: product-service
+ 
+  datasource:
+    url: jdbc:postgresql://localhost:5432/som
+    username: postgres
+    password: 123456789
+ 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+ 
+# example custom prop from config server
+product:
+  discount:
+    rate: 0.05
